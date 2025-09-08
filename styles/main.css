@@ -1,0 +1,41 @@
+#sidebar ul {
+  padding-left: 20px;
+  list-style: none;
+}
+
+#sidebar a {
+  text-decoration: none;
+  color: black;
+  font-size: 20pt;
+}
+
+#sidebar li {
+  font-size: 20pt;
+  text-wrap: nowrap;
+  padding-bottom: 0.5em;
+}
+
+#sidebar {
+  background-color: rgb(46, 241, 241);
+}
+
+#content {
+  height: 100vh; 
+  width: 100%; 
+  border: none; 
+  /* margin-top: 75px; */
+  margin-left: 50px;
+}
+
+#header {
+  /* ask why this is needed */
+  margin-bottom: -4px;
+}
+
+
+.kode-mono-normal {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}

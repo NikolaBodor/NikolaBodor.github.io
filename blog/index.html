@@ -8,27 +8,56 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        main {
+          display: grid;
+          grid-template-columns: 305px 1fr;
+          margin: 0;
+        }
+        body {
+          margin: 0;
+        }
+    </style>
+  </head>
 
-    <body>
-      <nav>
-        <ul>
-          <li><a href="../blog/blog-one.html" target="content">Blog one</a></li>
-          <li><a href="../blog/blog-two.html" target="content">Blog two</a></li>
-          <li><a href="../blog/blog-three.html" target="content">Blog three</a></li>
-          <li><a href="../blog/blog-four.html" target="content">Blog four</a></li>
+  <body>
+    <header id="header">
+      <img style="height: 100px; width: 100%;" src="../images/headerphoto.JPG"/>
+    </header>
+
+    <main>
+      <nav id="sidebar" class="kode-mono-normal">
+        <ul>  
+          <li><a href="../blog/blog-homepage.html" target="content">Home</a></li>
+          <br>
+          <li>Human Skill Blogs</li>
+          <ul>
+            <li><a href="../blog/blog-one.html" target="content">Blog one</a></li>
+            <li><a href="../blog/blog-two.html" target="content">Blog two</a></li>
+          </ul>
+          <br>
+          <br>
+          <li>Technical Blogs</li>
+          <ul>
+            <li><a href="../blog/blog-three.html" target="content">Blog three</a></li>
+            <li><a href="../blog/blog-four.html" target="content">Blog four</a></li>
+          </ul>
         </ul>
       </nav>
       
 
       <iframe 
-      height="100%"
-      width="100%"
+      id="content"
       name="content"
       src="../blog/blog-homepage.html">
       <!-- make blog homepage file for iframe -->
       
       </iframe>
+    </main>
 
 
-
-    </body>
+  </body>
+</html>

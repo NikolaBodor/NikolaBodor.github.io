@@ -21,6 +21,11 @@
           margin: 0;
         }
     </style>
+    <script>
+      function navigate() {
+        alert(1);
+      }
+    </script>
   </head>
 
   <body>
@@ -28,22 +33,25 @@
       <img style="height: 100px; width: 100%;" src="../images/headerphoto.JPG"/>
     </header>
 
-    <main>
+    <main class="backgroundimage">
       <nav id="sidebar" class="kode-mono-normal">
+        <button id="sidebarButton" onclick="navigate();" style="background-color: darkgrey;">
+          <img src="../svg-icons/keyboard_double_arrow_right_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"/>
+        </button>
         <ul>  
           <li><a href="../blog/blog-homepage.html" target="content">Home</a></li>
           <br>
           <li>Human Skill Blogs</li>
           <ul>
-            <li><a href="../blog/blog-one.html" target="content">Blog one</a></li>
-            <li><a href="../blog/blog-two.html" target="content">Blog two</a></li>
+            <li><a href="../blog/blog-one.html" target="content" class="blogLink">Blog one</a></li>
+            <li><a href="../blog/blog-two.html" target="content" class="blogLink">Blog two</a></li>
           </ul>
           <br>
           <br>
           <li>Technical Blogs</li>
           <ul>
-            <li><a href="../blog/blog-three.html" target="content">Blog three</a></li>
-            <li><a href="../blog/blog-four.html" target="content">Blog four</a></li>
+            <li><a href="../blog/javascript-dom.html" target="content" class="blogLink">Javascript & DOM</a></li>
+            <li><a href="../blog/blog-three.html" target="content" class="blogLink">Blog three</a></li>
           </ul>
         </ul>
       </nav>
@@ -54,7 +62,7 @@
       name="content"
       src="../blog/blog-homepage.html">
       <!-- make blog homepage file for iframe -->
-      
+      <!-- fix scrolling -->
       </iframe>
     </main>
 

@@ -17,9 +17,10 @@
 
 #sidebar {
   /* background-color: rgb(46, 241, 241); */
-  border: 10px;
-  border-color: black;
+  /* border: 10px; */
+  /* border-color: red; */
   background-color: rgba(159, 233, 241, 0.6);
+  border-right: solid thick black;
 }
 
 .blogLink {
@@ -27,25 +28,34 @@
 }
 
 #content {
-  height: 100vh; 
+  /* height: auto;  */
   width: 90%;
+  height: 90%;
   border: none; 
   margin-left: auto;
   margin-right: auto;
   margin-top: 75px;
+  margin-bottom: auto;
   /* padding-left: 50px; */
 }
 
 #header {
   /* ask why this is needed */
-  margin-bottom: -4px;
+  /* margin-bottom: -4px; */
+  height: 10vh;
+  background-image: url("../images/headerphoto.JPG");
+  background-size: 100% 100%;
 }
 
 .backgroundimage {
   background-image: url(../images/background.png);
   background-size: cover;
-  background-blend-mode: lighten;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-position: center center;
+  height: 90vh;
+ 
+  /* opacity (not needed anymore) */
+  /* background-blend-mode: lighten;
+  background-color: rgba(255, 255, 255, 0.3); */
 }
 
 
@@ -59,4 +69,8 @@
 .seperator {
   border-color: black;
   border-bottom: 3px solid !important;
+}
+
+.blogText {
+  padding: 20px;
 }

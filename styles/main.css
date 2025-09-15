@@ -19,8 +19,8 @@
   /* background-color: rgb(46, 241, 241); */
   /* border: 10px; */
   /* border-color: red; */
-  background-color: rgba(159, 233, 241, 0.6);
-  border-right: solid thick black;
+  background-color: rgba(159, 233, 241, 0.7);
+  border-right: solid 2.5px black;
 }
 
 .blogLink {
@@ -36,6 +36,7 @@
   margin-right: auto;
   margin-top: 75px;
   margin-bottom: auto;
+  border: solid black 2.5px;
   /* padding-left: 50px; */
 }
 

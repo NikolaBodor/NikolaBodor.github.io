@@ -29,17 +29,19 @@
     </p></ul>
     <h2>Loops and Control Flow</h2>
     <p><ul>
-      <li>the flow of execution is if statments and Loops</li>
+      <li>The flow of execution in Javascript is line by line but we can change the flow with things like if, else if statments and for loops.</li>
       <li>If, else statments are like railroad switches, if something doesnt meet the condition of the if statment it falls back to the else part.</li>
       <br>
       <img src="../images/Railway_turnout_-_Oulu_Finland.jpg" alt="train tracks and switch"/>
       <br>
-      <pre>if (meets condition) {
-        does this
-      } else {
-        does this
-      }
-      </pre>
+      <pre><code>
+        if (meets condition) {
+          does this
+        } else {
+          does this
+        }
+      </code></pre>
+      
       <img style="width: 700px;" src="../images/Funzionamento_Deviatoio.gif" alt="animated gif of a birds eye view train switch switching tracks"/>
       <li>Loops are like a game of Monopoly. You throw the dice and go from square to square until you reach back where you started and then go again.</li>
       <br>
@@ -52,20 +54,38 @@
       <br>
       <img src="../images/istockphoto-626544108-612x612.jpg" alt="tree with named branches"/>
       <br>
-      <li>starts at the top of the tree and find which element you are calling by id or class or smt and looks through branchs to find it</li>
+      <li>The DOM starts  searching at the top of the tree and finds which element you are calling by id or class and looks through branchs to find it</li>
     </p></ul>
 
     <h2>Arrays & Objects</h2>
     <p><ul>
-      <li>access arrays from numerical value</li>
-      <li>acess objects from property names</li>
+      <li>Arrays are accessed by numerical values</li>
+      <pre><code>
+        // Arrays are numbered like this:
+        //                 [0]    [1]     [2]
+        let arrayName = {"first. second, third"}
+      </code></pre>
+      <li>Objects are accessed by keys and property names</li>
+      <pre><code>
+        // Objects can have one value per name
+           or have multiple values as shown
+        let person = {
+          firstName: John,
+          lastName: Doe,
+
+          dateOfBirth: {
+            year: 1998,
+            month: 7
+          }
+        }
+        // The way to call an object is:
+        conesole.log(person.firstName)
+      </code></pre>
     </p></ul>
 
     <h2>Functions</h2>
     <p><ul>
-      <li>Functions are ways to spilt up code and oraganise it, this makes it easier for someone trying to read the code and makes it easier for you</li>
-      <li>helpful because makes it easier to read and not mix up code</li>
-      <li>write the code once then call (can call it mnultiple times) it so you dont have to write it multiple times</li>
+      <li>Functions allows you to break up your code into smaller chunks, they are also used for sections of code which need to be run multiple times because you can just call them. Functions help the readability organasation of your code.</li>
     </p></ul>
   </body>
 </html>

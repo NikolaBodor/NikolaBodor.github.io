@@ -1,70 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Blog Homepage</title>
-    <meta charset="UTF-8" />
-    <link
-      href="../styles/main.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
-    <style>
-        main {
-          display: grid;
-          grid-template-columns: 325px 1fr;
-          margin: 0;
-        }
-        body {
-          margin: 0;
-        }
-    </style>
-    <script>
-      function navigate() {
-        alert(1);
+<head>
+  <title>Blog Homepage</title>
+  <meta charset="UTF-8" />
+  <link
+    href="../styles/main.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+  <style>
+      main {
+        display: grid;
+        grid-template-columns: 325px 1fr;
+        margin: 0;
       }
-    </script>
-  </head>
+      body {
+        margin: 0;
+      }
+  </style>
+  <script>
+    function navigate() {
+      alert(1);
+    }
+  </script>
+</head>
 
-  <body>
-    <header id="header">
-    </header>
+<body>
+  <header id="header">
+  </header>
 
-    <main class="backgroundimage">
-      <nav id="sidebar" class="kode-mono-normal">
-        <button id="sidebarButton" onclick="navigate();" style="background-color: darkgrey;">
-          <img src="../svg-icons/keyboard_double_arrow_right_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"/>
-        </button>
-        <ul>  
-          <li><a href="../blog/blog-homepage.html" target="content">Home</a></li>
-          <br>
-          <li>Human Skill Blogs</li>
-          <ul>
-            <li><a href="../blog/indentity-values.html" target="content" class="blogLink">Identity and Values</a></li>
-            <li><a href="../blog/my-learning-plan.html" target="content" class="blogLink">My Learning Plan</a></li>
-            <li><a href="../blog/eq-and-iq.html" target="content" class="blogLink">EQ and IQ</a></li>
-          </ul>
-          <br>
-          <br>
-          <li>Technical Blogs</li>
-          <ul>
-            <li><a href="../blog/margin-borders.html" target="content" class="blogLink">Margins and Borders</a></li>
-            <li><a href="../blog/javascript-dom.html" target="content" class="blogLink">Javascript & DOM</a></li>
-          </ul>
+  <main class="backgroundimage">
+    <nav id="sidebar" class="kode-mono-normal">
+      <button id="sidebarButton" onclick="navigate();" style="background-color: darkgrey;">
+        <img src="../svg-icons/keyboard_double_arrow_right_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"/>
+      </button>
+      <ul>  
+        <li><a href="../blog/blog-homepage.html" target="content">Home</a></li>
+        <br>
+        <li>Human Skill Blogs</li>
+        <ul>
+          <li><a href="../blog/indentity-values.html" target="content" class="blogLink">Identity and Values</a></li>
+          <li><a href="../blog/my-learning-plan.html" target="content" class="blogLink">My Learning Plan</a></li>
+          <li><a href="../blog/eq-and-iq.html" target="content" class="blogLink">EQ and IQ</a></li>
         </ul>
-      </nav>
+        <br>
+        <br>
+        <li>Technical Blogs</li>
+        <ul>
+          <li><a href="../blog/margin-borders.html" target="content" class="blogLink">Margins and Borders</a></li>
+          <li><a href="../blog/javascript-dom.html" target="content" class="blogLink">Javascript & DOM</a></li>
+        </ul>
+      </ul>
+    </nav>
 
-      <iframe
-      id="content"
-      name="content"
-      src="../blog/blog-homepage.html">
-      <!-- make blog homepage file for iframe -->
-      <!-- fix scrolling -->
-      </iframe>
-    </main>
+    <iframe
+    id="content"
+    name="content"
+    src="../blog/blog-homepage.html">
+    <!-- make blog homepage file for iframe -->
+    </iframe>
+  </main>
 
 
-  </body>
+</body>
 </html>

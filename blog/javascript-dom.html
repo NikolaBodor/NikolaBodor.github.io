@@ -1,91 +1,91 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      href="../styles/main.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <style>
-      body {
-        font-size: 15pt;
-        background-color: rgba(234, 243, 244, 0.8);
-      }
-    </style>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <link
+    href="../styles/main.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <style>
+    body {
+      font-size: 15pt;
+      background-color: rgba(234, 243, 244, 0.8);
+    }
+  </style>
+</head>
 
-  <body class="blogText">
-    <h1>Javascript & DOM</h1>
-    <h2 class="seperator">15/09/25</h2>
-    
+<body class="blogText">
+  <h1>Javascript & DOM</h1>
+  <h2 class="seperator">15/09/25</h2>
+  
+  <br>
+  <h2>Javascripts Relationship to HTML and CSS</h2>
+  <p><ul>
+    <li>HMTL is for content e.g text, sturucture and media.</li>
+    <li>CSS is for styling, colours fonts borders sizes spacing. It's the look and feel (theme/design) of a website.</li>
+    <li>Javascript is for the behaviour of a website, reacts to users</li>
+    <li>They all together allow the coder of the website to make it dynamic.</li>
+  </p></ul>
+  <h2>Loops and Control Flow</h2>
+  <p><ul>
+    <li>The flow of execution in Javascript is line by line but we can change the flow with things like if, else if statments and for loops.</li>
+    <li>If, else statments are like railroad switches, if something doesnt meet the condition of the if statment it falls back to the else part.</li>
     <br>
-    <h2>Javascripts Relationship to HTML and CSS</h2>
-    <p><ul>
-      <li>HMTL is for content e.g text, sturucture and media.</li>
-      <li>CSS is for styling, colours fonts borders sizes spacing. It's the look and feel (theme/design) of a website.</li>
-      <li>Javascript is for the behaviour of a website, reacts to users</li>
-      <li>They all together allow the coder of the website to make it dynamic.</li>
-    </p></ul>
-    <h2>Loops and Control Flow</h2>
-    <p><ul>
-      <li>The flow of execution in Javascript is line by line but we can change the flow with things like if, else if statments and for loops.</li>
-      <li>If, else statments are like railroad switches, if something doesnt meet the condition of the if statment it falls back to the else part.</li>
-      <br>
-      <img src="../images/Railway_turnout_-_Oulu_Finland.jpg" alt="train tracks and switch"/>
-      <br>
-      <pre><code>
-        if (meets condition) {
-          does this
-        } else {
-          does this
+    <img src="../images/Railway_turnout_-_Oulu_Finland.jpg" alt="train tracks and switch"/>
+    <br>
+    <pre><code>
+      if (meets condition) {
+        does this
+      } else {
+        does this
+      }
+    </code></pre>
+    
+    <img style="width: 700px;" src="../images/Funzionamento_Deviatoio.gif" alt="animated gif of a birds eye view train switch switching tracks"/>
+    <li>Loops are like a game of Monopoly. You throw the dice and go from square to square until you reach back where you started and then go again.</li>
+    <br>
+    <img style="width: 400px; height: auto;" src="../images/monopoly-board.jpg" alt="a picture of a monopoly board"/>
+  </p></ul>
+
+  <h2>DOM</h2>
+  <p><ul>
+    <li>The DOM is structured like a tree where each branches only has one parent.</li>
+    <br>
+    <img src="../images/istockphoto-626544108-612x612.jpg" alt="tree with named branches"/>
+    <br>
+    <li>The DOM starts  searching at the top of the tree and finds which element you are calling by id or class and looks through branchs to find it</li>
+  </p></ul>
+
+  <h2>Arrays & Objects</h2>
+  <p><ul>
+    <li>Arrays are accessed by numerical values</li>
+    <pre><code>
+      // Arrays are numbered like this:
+      //                 [0]    [1]     [2]
+      let arrayName = {"first. second, third"}
+    </code></pre>
+    <li>Objects are accessed by keys and property names</li>
+    <pre><code>
+      // Objects can have one value per name
+          or have multiple values as shown
+      let person = {
+        firstName: John,
+        lastName: Doe,
+
+        dateOfBirth: {
+          year: 1998,
+          month: 7
         }
-      </code></pre>
-      
-      <img style="width: 700px;" src="../images/Funzionamento_Deviatoio.gif" alt="animated gif of a birds eye view train switch switching tracks"/>
-      <li>Loops are like a game of Monopoly. You throw the dice and go from square to square until you reach back where you started and then go again.</li>
-      <br>
-      <img style="width: 400px; height: auto;" src="../images/monopoly-board.jpg" alt="a picture of a monopoly board"/>
-    </p></ul>
+      }
+      // The way to call an object is:
+      conesole.log(person.firstName)
+    </code></pre>
+  </p></ul>
 
-    <h2>DOM</h2>
-    <p><ul>
-      <li>The DOM is structured like a tree where each branches only has one parent.</li>
-      <br>
-      <img src="../images/istockphoto-626544108-612x612.jpg" alt="tree with named branches"/>
-      <br>
-      <li>The DOM starts  searching at the top of the tree and finds which element you are calling by id or class and looks through branchs to find it</li>
-    </p></ul>
-
-    <h2>Arrays & Objects</h2>
-    <p><ul>
-      <li>Arrays are accessed by numerical values</li>
-      <pre><code>
-        // Arrays are numbered like this:
-        //                 [0]    [1]     [2]
-        let arrayName = {"first. second, third"}
-      </code></pre>
-      <li>Objects are accessed by keys and property names</li>
-      <pre><code>
-        // Objects can have one value per name
-           or have multiple values as shown
-        let person = {
-          firstName: John,
-          lastName: Doe,
-
-          dateOfBirth: {
-            year: 1998,
-            month: 7
-          }
-        }
-        // The way to call an object is:
-        conesole.log(person.firstName)
-      </code></pre>
-    </p></ul>
-
-    <h2>Functions</h2>
-    <p><ul>
-      <li>Functions allows you to break up your code into smaller chunks, they are also used for sections of code which need to be run multiple times because you can just call them. Functions help the readability organasation of your code.</li>
-    </p></ul>
-  </body>
+  <h2>Functions</h2>
+  <p><ul>
+    <li>Functions allows you to break up your code into smaller chunks, they are also used for sections of code which need to be run multiple times because you can just call them. Functions help the readability organasation of your code.</li>
+  </p></ul>
+</body>
 </html>
